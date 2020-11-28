@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D9AF743-A669-43DC-A1CD-B1E079C9F5DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WindowsApplication2</RootNamespace>
+    <AssemblyName>Netfu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Netfu.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\Users\user\Desktop\Net\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NLua">
+      <HintPath>..\..\..\Users\user\Desktop\Net\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="ProxySocket">
+      <HintPath>..\..\..\Users\user\Desktop\Net\ProxySocket.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketIOClient.NetFx">
+      <HintPath>..\..\..\Users\user\Desktop\Net\SocketIOClient.NetFx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WebClientAdvanced">
+      <HintPath>..\..\..\Users\user\Desktop\Net\WebClientAdvanced.dll</HintPath>
+    </Reference>
+    <Reference Include="wpse">
+      <HintPath>..\..\..\Users\user\Desktop\Net\wpse.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-{77E67F9E-0BE1-43DC-A8C9-7FBED0B1140D}.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="Action.cs" />
+    <Compile Include="Actions.cs" />
+    <Compile Include="ActionTurnIA.cs" />
+    <Compile Include="Actors.cs" />
+    <Compile Include="AutoLaunch.cs" />
+    <Compile Include="Autopath.cs" />
+    <Compile Include="Cell.cs" />
+    <Compile Include="CellList.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="ChatHandler.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class11.cs" />
+    <Compile Include="Class12.cs" />
+    <Compile Include="Class13.cs" />
+    <Compile Include="Class14.cs" />
+    <Compile Include="Class15.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class8.cs" />
+    <Compile Include="Class9.cs" />
+    <Compile Include="Combat.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DCManager.cs" />
+    <Compile Include="Declarations.cs" />
+    <Compile Include="DirectionsEnum.cs" />
+    <Compile Include="Drago.cs" />
+    <Compile Include="Echange.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="EffectIDEnum.cs" />
+    <Compile Include="ElgSocketClient.cs" />
+    <Compile Include="ElgSocketEventArgs.cs" />
+    <Compile Include="Enclo.cs" />
+    <Compile Include="EtatFamilier.cs" />
+    <Compile Include="Famillier.cs" />
+    <Compile Include="Fighter.cs" />
+    <Compile Include="FightStatsEntry.cs" />
+    <Compile Include="Fonctions.cs" />
+    <Compile Include="GameServer.cs" />
+    <Compile Include="GlobalConfig.cs" />
+    <Compile Include="GradeMonster.cs" />
+    <Compile Include="IA.cs" />
+    <Compile Include="IAAvanced.cs" />
+    <Compile Include="IIndexedObject.cs" />
+    <Compile Include="InfoPerso.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="Interactive.cs" />
+    <Compile Include="Inventaire.cs" />
+    <Compile Include="IODescription.cs" />
+    <Compile Include="IPathNode.cs" />
+    <Compile Include="Job.cs" />
+    <Compile Include="JobHandler.cs" />
+    <Compile Include="JobsDescription.cs" />
+    <Compile Include="LaunchedSpells.cs" />
+    <Compile Include="Licence.cs" />
+    <Compile Include="LineTrajet.cs" />
+    <Compile Include="Loader.cs" />
+    <Compile Include="LuaBot.cs" />
+    <Compile Include="LuaTrajet.cs" />
+    <Compile Include="MapDescription.cs" />
+    <Compile Include="Maphandler.cs" />
+    <Compile Include="MapNeighbour.cs" />
+    <Compile Include="Maps.cs" />
+    <Compile Include="Merchant.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageChatHisto.cs" />
+    <Compile Include="MonsterDescription.cs" />
+    <Compile Include="MonsterGroupe.cs" />
+    <Compile Include="MovementHandler.cs" />
+    <Compile Include="My\MySettings.Designer.cs">
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My\MySettingsProperty.cs" />
+    <Compile Include="NextTourPosition.cs" />
+    <Compile Include="NPC.cs" />
+    <Compile Include="ObjetDescription.cs" />
+    <Compile Include="Objets.cs" />
+    <Compile Include="Path.cs" />
+    <Compile Include="PathFinding.cs" />
+    <Compile Include="Perso.cs" />
+    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomMoveManager.cs" />
+    <Compile Include="Ressources.cs" />
+    <Compile Include="SimplifiedPerso.cs" />
+    <Compile Include="Skill.cs" />
+    <Compile Include="SkillDescription.cs" />
+    <Compile Include="SpatialAStar.cs" />
+    <Compile Include="SpellDescription.cs" />
+    <Compile Include="SpellHandler.cs" />
+    <Compile Include="SpellLevelDescription.cs" />
+    <Compile Include="status.cs" />
+    <Compile Include="trajetManager.cs" />
+    <Compile Include="turnIA.cs" />
+    <Compile Include="typeItemsPaddock.cs" />
+    <Compile Include="VB$AnonymousDelegate_0.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aR3nbf8dQp2feLmk31.lSfgApatkdxsVcGcrktoFd.resources" />
+    <EmbeddedResource Include="Netfu.g.resources" />
+    <EmbeddedResource Include="Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
